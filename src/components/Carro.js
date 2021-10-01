@@ -15,7 +15,7 @@ const styles = {
         position: 'relative',
         left: 12,
         top: 20,// << top hace que aparezca sobrepuesto
-    }
+    },    
 }
 class Carro extends Component {
     render() {
@@ -24,8 +24,8 @@ class Carro extends Component {
            <div>
                <span style={styles.bubble}>
                    <BubbleAlert/>
-                   </span>
-               <button style={styles.carro}>Carro</button>
+                   </span>                                      
+               <button style={styles.carro} ><i class="fas fa-shopping-cart"></i></button>
            </div>
         )
     }

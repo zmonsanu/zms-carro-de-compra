@@ -11,7 +11,7 @@ class Logo extends Component {
     render() {
         return (
             <div style={styles.logo}>
-                Shop
+                <i class="fas fa-h-square"></i>
             </div>
             
         )

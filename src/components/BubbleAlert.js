@@ -14,7 +14,7 @@ const styles = {
 class BubbleAlert extends Component {
     render() {              
         return (
-            <span style={styles.bubbleAlert}>5</span>
+            <span style={styles.bubbleAlert}>0</span>
         )
     }
 }
