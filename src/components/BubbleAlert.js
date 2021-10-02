@@ -12,9 +12,15 @@ const styles = {
     }
 }
 class BubbleAlert extends Component {
-    render() {              
+    getNumber(n) {
+        if (!n) { return ''}
+        return n > 9? '9+' : n
+    }
+    render() { 
+        const { value } =  this.props
         return (
-            <span style={styles.bubbleAlert}>0</span>
+            <span style={styles.bubbleAlert}>
+                {this.getNumber(value)}</span>
         )
     }
 }

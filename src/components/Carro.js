@@ -19,13 +19,17 @@ const styles = {
 }
 class Carro extends Component {
     render() {
-        
+        const {carro} =this.props
+        //el método reduce suma al acumulador acc las cantidades de cada elemente partiendo de 0
+        const cantidad = carro.reduce((acc,el) => acc+el.cantidad,0)
         return (
            <div>
                <span style={styles.bubble}>
-                   <BubbleAlert/>
-                   </span>                                      
-               <button style={styles.carro} ><i class="fas fa-shopping-cart"></i></button>
+                   {cantidad !== 0
+                       ? <BubbleAlert value={cantidad}/>
+                       : null}
+                </span>                                      
+               <button style={styles.carro}><i class="fas fa-shopping-cart"></i></button>
            </div>
         )
     }
